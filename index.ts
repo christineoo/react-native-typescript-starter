@@ -1,4 +1,4 @@
-import { AppRegistry } from 'react-native';
-import App from './App';
+import { AppRegistry } from "react-native";
+import App from "./App";
 
-AppRegistry.registerComponent('ReactNativeTypescriptStarter', () => App);
+AppRegistry.registerComponent("ReactNativeTypescriptStarter", () => App);
