@@ -8,11 +8,11 @@
     "tsc": "tsc",
     "clean": "rimraf artifacts",
     "build": "yarn clean && yarn tsc",
-    "watch": "npm run build -- -w",
+    "watch": "yarn build -- -w",
     "start:ios":
-      "yarn run build && concurrently -r 'yarn run watch' 'react-native run-ios'",
+      "yarn build && concurrently -r 'yarn watch' 'react-native run-ios'",
     "start:android":
-      "yarn run build && concurrently -r 'yarn run watch' 'react-native run-android'"
+      "yarn build && concurrently -r 'yarn watch' 'react-native run-android'"
   },
   "dependencies": {
     "react": "^16.2.0",
