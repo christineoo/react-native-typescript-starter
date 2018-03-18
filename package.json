@@ -9,16 +9,19 @@
     "clean": "rimraf artifacts",
     "build": "yarn clean && yarn tsc",
     "watch": "npm run build -- -w",
-    "start:ios": "yarn run build && concurrently -r 'yarn run watch' 'react-native run-ios'"
+    "start:ios":
+      "yarn run build && concurrently -r 'yarn run watch' 'react-native run-ios'",
+    "start:android":
+      "yarn run build && concurrently -r 'yarn run watch' 'react-native run-android'"
   },
   "dependencies": {
-    "react": "16.0.0",
-    "react-native": "0.51.0"
+    "react": "^16.2.0",
+    "react-native": "^0.54.2"
   },
   "devDependencies": {
     "@types/jest": "^21.1.9",
-    "@types/react": "^16.0.31",
-    "@types/react-native": "^0.51.5",
+    "@types/react": "^16.0.40",
+    "@types/react-native": "^0.52.18",
     "@types/react-test-renderer": "^16.0.0",
     "babel-jest": "21.2.0",
     "babel-preset-react-native": "4.0.0",
@@ -27,15 +30,11 @@
     "react-test-renderer": "16.0.0",
     "rimraf": "^2.6.2",
     "ts-jest": "^22.0.0",
-    "typescript": "^2.6.2"
+    "typescript": "^2.7.2"
   },
   "jest": {
     "preset": "react-native",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js"
-    ],
+    "moduleFileExtensions": ["ts", "tsx", "js"],
     "transform": {
       "^.+\\.(js)$": "<rootDir>/node_modules/babel-jest",
       "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
