@@ -41,9 +41,8 @@ export default class App extends React.Component<Props, State> {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native! (in TypeScript)
-        </Text>
+        <Text style={styles.welcome}>Welcome to React Native!</Text>
+        <Text style={styles.welcome}>In TypeScript!</Text>
         <Text style={styles.instructions}>
           To get started, edit index.ios.js
         </Text>
