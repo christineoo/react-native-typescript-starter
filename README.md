@@ -40,3 +40,8 @@ $ yarn start:android
 ```bash
 $ yarn test
 ```
+
+## Screenshots
+| iOS        | Android           |
+| ------------- |:-------------:|
+|<img width="303" alt="screen shot 2018-03-18 at 21 12 52" src="https://user-images.githubusercontent.com/4728837/37606206-3dcdd70c-2bd8-11e8-86b4-f8bd5293a2aa.png"> |<img width="303" alt="screen shot 2018-03-18 at 21 12 52" src="https://user-images.githubusercontent.com/4728837/37606266-67ab234a-2bd8-11e8-887f-ccf3c3e57a6a.png">|
